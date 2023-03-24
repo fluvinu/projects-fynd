@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bdaycard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .bodyy{
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            box-shadow: 3px 3px 2px ;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            height: 400px;
+            align-items: center;
+            border-radius: 3% ;
+            position: relative;
+            transition: 2s;
+        }
+        .imagediv{
+            display: inline;
+            position: absolute;
+        }
+        .container:hover img{
+            transform: rotatey(-180deg);
+        }
+        .container:hover{
+            transform: rotate(-10deg);
+            transform: translateX(150px);  
+        }
+        .imagediv img{
+            box-shadow: 3px 3px 2px ;
+            height: 400px;
+            width: 300px;
+            border-radius: 3%;
+            transform-origin: left;
+            object-fit: fill;
+            transition: 1s; 
+        }
+        .textdev #text{
+            border: 2px solid red;
+            display: inline-block;
+            text-align: center;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bodyy">
+        <div class="container">
+            <div class="imagediv">
+                <img src="890f92383e257fed17a0358242ffdf5f.jpg" alt=" bdau girl image">
+            </div>
+            <div class="textdev">
+                <h2 id="text"> <span>happy birthday</span> <br> two you</h2>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cupanimation</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .one{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+            animation-name: steam;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            transition:transform 1s ease-in-out 0s;
+        }
+        .two{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+            animation-name: steama;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            transition:transform 1s ease-in-out 0s;
+        }
+        .three{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+            animation-name: steamb;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            transition:transform 1s ease-in-out 0s;
+        }
+        @keyframes steam {
+            0% {top: 35%;}
+            25% {top: 18%; left: 45%; opacity: 0.8;}
+            50% {top: 15%; left: 53%; opacity: 0.5;}
+            75% {top: 10%; opacity: 0.3;}
+            100% {top: 5%; opacity: 0.2;}
+        }
+        @keyframes steama {
+            0% {top: 35%; left: 47%; }
+            25% {top: 21%; left: 50%; opacity: 0.6;}
+            50% {top: 15%; left: 55%; opacity: 0.5;}
+            75% {top: 10%; left: 50%; opacity: 0.3;}
+            100% {top: 5%;left: 55%; opacity: 0;}
+        }
+        @keyframes steamb {
+            0% {top: 35%;}
+            25% {top: 20%; left: 55%; opacity: 0.6;}
+            50% {top: 15%; left: 50%; opacity: 0.4;}
+            75% {top: 10%; left: 55%; opacity: 0.2;}
+            100% {top: 5%; left: 50%; opacity: 0;}
+        }
+        img{
+            position: absolute;
+            top: -80%;
+            left: -10%;
+            transform: scale(0.3);
+            
+        }
+        h1{
+            position: absolute;
+            left: 51.5%;
+            top: 55%;
+            letter-spacing: 0.2em;
+            text-shadow: 3px 3px  rgb(217, 207, 15);
+        }
+        #m{
+            position: absolute;
+            left: 51.5%;
+            top: 61%;
+            letter-spacing: 0.2em;
+            text-shadow: 3px 3px  rgb(217, 207, 15);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation one">
+            
+        </div>
+        <div class="animation two">
+            
+        </div>
+        <div class="animation three">
+            
+        </div>
+             <img src="image\new—Pngtree—cartoon white cup download_4486738.png" alt="cup image">
+        
+            
+            <!-- <h1>G</h1>
+          
+            <h1 id="m">M</h1> -->
+        
+
+    </div>
+</body>
+</html>

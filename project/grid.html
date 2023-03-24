@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        background-color: rgb(244, 240, 247);
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+    }
+    .container{
+        display: grid;
+        /* border: 2px solid red; */
+        grid-template-rows: 6% 35% 35% 49% 50% 45% 71% 77% 10%;
+        grid-template-columns: repeat(4,1fr);
+        height: 100vh;
+        grid-gap: 7px;      
+    }
+
+    /* one row 1 10% */
+    .nav{background-color: yellow; grid-row: 1/2; grid-column: 1/-1; box-shadow: 0 2px 3px; transition: 3s;} 
+    /* two row 2 35% + 35%*/
+    .main{background-color: black; grid-column: 1/3; grid-row: 2/4;}
+   
+    .sidebar{background-color: rgb(236, 65, 65); grid-row: 2/4; grid-column: 3/5; align-items: center; border: 4pxspx solid red; object-fit: cover;}
+
+    /* two row 3 65% */
+    .aside{background-color: rgb(239, 170, 22); grid-column: 1/-1; grid-row: 4/6; transition: 2s;}
+    /* two row 4 60%*/
+    .footer{background-color: blueviolet; grid-column: 1/-1; grid-row: 6/9;}
+    /* one row 5 30%*/
+    .contact1{background-color: antiquewhite; grid-row: 8/10; grid-column: 1/-1;}
+    /* one row 6 10%*/
+    #Blessings{background-color: red; grid-column: 1/-1;}
+    .icon{
+        display: inline;
+        margin: 10px;
+        float: left;
+    }
+    .login{
+        float: right;
+    }
+    .main{
+       text-align: center;
+    }
+   .section{
+    box-shadow: 0 2px 3px;
+   
+   }
+   #goku{
+    width:100%;
+    height:100%;
+   }
+   #gokuM{
+    width:100%;
+    height:100%;
+   }
+   .aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   #aa{
+    text-shadow: 4px 5px rgb(249, 2, 2);
+    font-size: 60px;
+    text-align: center;
+   }
+   h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+   }
+   #Blessings{
+    color: white;
+    font-size: 20px;
+   }
+   .footer{
+    display: flex;
+    align-items: center;
+    padding: 20%;
+    /* justify-content: center; */
+    flex-direction: column;
+    }
+   h2{
+   /* border: 1px solid red; */
+    color: white;
+    margin: auto;
+    text-align: center;
+   }
+
+   input{
+    width: 300px;
+    height: 25px;
+    box-shadow: 2px 3px;
+    text-align: center;
+   }
+   .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      margin-top: 30px;
+    }
+    button {
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+    .contact1{
+     align-content: center;
+     width: 100%;
+     
+    }
+    button:hover, a:hover {
+     opacity: 0.7;
+    }
+    .title {
+      color: red;
+      font-size: 20px;
+      text-shadow: 1px 2pxs #000;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="home icon"><a href="\grid.html">Home</a></div>
+            <div class="about icon"><a href="#about">About Us</a></div>
+            <div class="contact icon"><a href="#conR">Contact Us</a></div>
+            <div class="login icon"><a href="#contact">Login</a></div>
+            <div class="registration icon" style="float: right;"><a href="#contact">Registration </a></div>
+        </div>
+        <div class="section main">
+            <img id="gokuM" src="image/main 1giphy (1).gif" alt="image">
+        </div>
+        <div class="section sidebar">  
+             <img id="goku" src="image/giphy.gif" alt="image">
+        </div>
+        <div class="section aside" id="about">
+            <a id="aa" href="https://www.fulltoonsindia.com/search/label/Dragon%20Ball" target="_blank">you can downlode all episode of dragon ball from hear (VPN)</a> 
+        </div>
+        <!-- foter  blue clr bala  -->
+        <div class="section footer" id="contact">
+            <div><h2>If yo dont have account it will genrated </h2></div>
+            <br>
+            <form action="">
+                <div id="f"><input type="text" name="name" placeholder="Name" required></div> <br>
+                <div id="f"><input type="pass" name="pass" placeholder="Passworld" required></div> <br>
+                <div id="f"><input type="text" name="email" placeholder="Enter email" required> </div><br>
+                <button>Login / registration</button>
+            </form>
+            
+        </div>
+        <div class="contact1" id="conR">
+            <div class="card">   
+                <img id="contactgoku" src="image\2main 00w.webp" alt="John" style="width:45%" >
+                <h1>GOKU</h1>
+                <p class="title">Defender of Universe, (25 times) </p>
+                <p> Holder of The Ultimate Ultra Instant</p>
+                <a href="https://twitter.com/gokurawt?lang=en"><i class="fa fa-twitter"></i></a>
+                <a href="mailto:guko@thelegender.com"><i class="fa fa-google"></i></a>
+                <a href="https://www.facebook.com/SonGokuuu/"><i class="fa fa-facebook"></i></a>
+                <p><button><a style="color: white;" href="tel:100">contact</a></button></p>              
+            </div>
+        </div>
+        <div id="Blessings">
+            
+            <h3>devloped by fluvinu with ❤ </h3>
+        </div>
+    </div>
+</body>
+</html>
