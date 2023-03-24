@@ -7,8 +7,12 @@
     <title>Bdaycard</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
         .bodyy{
-            background-color: aqua;
+            background-color: black;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -19,7 +23,7 @@
             width: 300px;
             display: flex;
             justify-content: center;
-            background-color: white;
+            background-color: whitesmoke;
             height: 400px;
             align-items: center;
             border-radius: 3% ;
@@ -34,7 +38,7 @@
             transform: rotatey(-180deg);
         }
         .container:hover{
-            transform: rotate(-10deg);
+            /* transform: rotate(-10deg);        nt wrk 2gther */
             transform: translateX(150px);  
         }
         .imagediv img{
@@ -47,12 +51,29 @@
             transition: 1s; 
         }
         .textdev #text{
-            border: 2px solid red;
+            /* border: 2px solid red; */
             display: inline-block;
             text-align: center;
+            line-height: 40px;
+            letter-spacing: .6em;
+            margin-left: 30px;
+            text-transform: capitalize;
         }
         span{
             color: red;
+        }
+        .bles{
+            position: absolute;
+            bottom: 0px;
+            font-size: 20px;
+            color: white;
+            /* background-color: black; */
+            width: 100vw;
+        }
+        .bles h4{
+            left: 42.5%;
+            position: relative;
+            
         }
     </style>
 </head>
@@ -64,9 +85,13 @@
                 <img src="890f92383e257fed17a0358242ffdf5f.jpg" alt=" bdau girl image">
             </div>
             <div class="textdev">
-                <h2 id="text"> <span>happy birthday</span> <br> two you</h2>
+                <h2 id="text"> <span>happy birthday</span> <br> two you baby ❤</h2>
             </div>
         </div>
+        <div class="bles">
+            <h4>developed by fluvinu with ❤</h4>
+        </div>
+
     </div>
 
 
