@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bdaycard</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+      }
+      .bodyy {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        box-shadow: -3px 3px 4px white;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+        height: 400px;
+        align-items: center;
+        border-radius: 3%;
+        position: relative;
+        transition: 2s;
+      }
+      .imagediv {
+        display: inline;
+        position: absolute;
+      }
+      .container:hover img {
+        transform: rotateY(-180deg);
+      }
+      .container:hover {
+        transform: rotate(-10deg) translateX(150px);
+        /* transform: */
+      }
+      .imagediv img {
+        box-shadow: -3px 3px 4px white;
+        height: 400px;
+        width: 300px;
+        border-radius: 3%;
+        transform-origin: left;
+        /* object-fit: fill;   dont know about it  */
+        transition: 1s;
+      }
+      .textdev #text {
+        /* border: 2px solid red; */
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 0.6em;
+        margin-left: 30px;
+        text-transform: capitalize;
+      }
+      span {
+        color: red;
+      }
+      .bles {
+        position: absolute;
+        bottom: 0px;
+        font-size: 20px;
+        color: white;
+        /* background-color: black; */
+        width: 100vw;
+      }
+      .bles h4 {
+        left: 42.5%;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bodyy">
+      <div class="container">
+        <div class="imagediv">
+          <img src="890f92383e257fed17a0358242ffdf5f.jpg" />
+        </div>
+        <div class="textdev">
+          <h2 id="text">
+            <span>happy birthday</span> <br />
+            two you baby ❤
+          </h2>
+        </div>
+      </div>
+      <div class="bles">
+        <h4>developed by fluvinu with ❤</h4>
+      </div>
+    </div>
+  </body>
+</html>
